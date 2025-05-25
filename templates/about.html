@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Image Forgery Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../static/icon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: "Poppins", sans-serif;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Forgery Detector</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto py-10 px-4">
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-4">About This Project</h2>
+            <p class="text-lg leading-relaxed">
+                This project is an <strong>Image Forgery Detection System</strong> designed to classify whether an
+                uploaded image is <span class="text-red-600 font-semibold">fake</span> or <span
+                    class="text-green-600 font-semibold">real</span>.
+                We use an <strong>ELA-based preprocessing technique</strong> and combine <strong>RGB and LAB edge
+                    detection</strong> methods to extract meaningful tampering features. A deep learning model trained
+                on the CASIA v2 dataset performs the classification.
+            </p>
+            <p class="mt-4 text-lg">
+                The aim of this project is to assist in detecting forged or manipulated images in digital media, which
+                is important for journalism, forensics, and legal investigations.
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h3 class="text-2xl font-semibold mb-3">What We Have Done</h3>
+            <ul class="list-disc list-inside text-lg space-y-2">
+                <li>Preprocessed images using Error Level Analysis (ELA)</li>
+                <li>Extracted RGB and LAB color edge features</li>
+                <li>Trained a CNN model using TensorFlow and Keras</li>
+                <li>Built a web interface using Flask for uploading and predicting images</li>
+                <li>Added visual output of processed images with edge detection overlay</li>
+                <li>Designed a responsive and interactive UI</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-4">Our Team</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold">Praveen Kumar M</h4>
+                    <!-- <p class="text-gray-600">Model Training & Data Processing</p> -->
+                    <p class="text-gray-600">IT - BATCH 2025</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold">Sathish Kumar S</h4>
+                    <!-- <p class="text-gray-600">Full Stack Developer & UI Designer</p> -->
+                    <p class="text-gray-600">IT - BATCH 2025</p>
+
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold">Tharun Kumar M</h4>
+                    <!-- <p class="text-gray-600">Backend Integration & Deployment</p> -->
+                    <p class="text-gray-600">IT - BATCH 2025</p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-4">
+        <p class="mb-0 py-3">&copy; IT UCET 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
