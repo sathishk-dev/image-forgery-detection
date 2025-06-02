@@ -1,6 +1,6 @@
 # Image Forgery Detection
 
-A deep learning-based image forgery detection system using the DPMSN model, implemented with Flask for a web-based interface.
+A deep learning-based image forgery detection system using the RGB + LAB(ELA) model, implemented with Flask for a web-based interface.
 
 ## Project Structure
 ```
