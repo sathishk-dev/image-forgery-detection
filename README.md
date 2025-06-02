@@ -39,10 +39,10 @@ pip install -r requirements.txt
 
 ### Step 2: Training the Model
 
-To train the DPMSN model, run:
+To train the model, run the jupyter file (Jupyter/Colab/Kaggle):
 
 ```sh
-python train.py
+train.ipynb
 ```
 
 #### Expected Console Output (Training):
