@@ -1,21 +1,16 @@
-# Forgery Detection
+# Image Forgery Detection
 
 A deep learning-based image forgery detection system using the DPMSN model, implemented with Flask for a web-based interface.
 
 ## Project Structure
 ```
-Forgery-Detection/
-│── dataset/                # Dataset Folder
-│   ├── images/             # Original images
-│   ├── masks/              # Ground truth forgery masks
+Image-Forgery-Detection/
+│── casia-v2/                #Dataset folder
 │── models/                 # Saved models
 │── static/                 # Flask UI assets
 │── templates/              # HTML templates for Flask
-│── app.py                  # Flask Web App
-│── dpmsn_model.py          # DPMSN Model Definition
-│── dataset_loader.py       # Data Preprocessing & Loading
-│── train.py                # Model Training Script
-│── evaluate.py             # Model Evaluation Script
+│── app.py                  # Flask Web 
+│── train.ipynb             # Model Training Scrip
 │── requirements.txt        # Required Packages
 │── README.md               # Project Documentation
 ```
@@ -32,17 +27,6 @@ The dataset contains the following folders:
 - `Tp/` → Tampered (forged) images
 - `CASIA2 Groundtruth/` → Binary masks for tampered images
 
-### Organizing the Dataset
-To use the dataset correctly, organize the files as follows:
-
-#### Step 1: Move Images
-✅ Copy all images from:
-- `Au/` → Move all images into `dataset/images/`
-- `Tp/` → Move all images into `dataset/images/`
-
-#### Step 2: Move Masks
-✅ Copy all ground truth masks from `CASIA2 Groundtruth/` into `dataset/masks/`
-
 ## Installation
 
 ### Step 1: Install Dependencies
@@ -53,22 +37,7 @@ You can install the required dependencies using the following command:
 pip install -r requirements.txt
 ```
 
-Alternatively, install them manually:
-
-```sh
-pip install torch torchvision torchaudio
-pip install numpy opencv-python matplotlib flask
-```
-
-### Step 2: Preprocess Dataset
-
-Run the dataset preprocessing script:
-
-```sh
-python dataset_loader.py
-```
-
-## Training the Model
+### Step 2: Training the Model
 
 To train the DPMSN model, run:
 
@@ -83,20 +52,7 @@ Epoch [2/10], Loss: 0.3011
 ...
 Training Completed!
 ```
-After training completes, check the `models/` folder for the file `dpmsn_model.pth`.
-
-## Evaluating the Model
-
-To evaluate the model's performance, run:
-
-```sh
-python evaluate.py
-```
-
-#### Expected Console Output (Evaluation):
-```
-Average F1 Score: 0.91
-```
+After training completes, check the `models/` folder for the file `image_forgery_detection_casia2.h5`.
 
 ## Running the Web Application
 
@@ -116,5 +72,11 @@ http://127.0.0.1:5000/
 - Upload an image
 - View forged regions highlighted
 
+### Our Team
+- Praveenkumar M
+- Sathish Kumar S
+- Tharunkumar M
+
 🚀 Enjoy detecting forgeries with deep learning! 🚀
+
 
