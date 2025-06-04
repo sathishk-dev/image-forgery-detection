@@ -74,7 +74,7 @@ http://127.0.0.1:5000/
 
 ### 📽 Demo Video
 
-<video src="./static/Live Demo.mp4" controls width="700">
+<video src="https://github.com/sathishk-dev/image-forgery-detection/blob/a356f5a0c53a7f414e05a83b9cc5b2c1527c66d2/static/Live%20Demo.mp4" controls width="700">
   Your browser does not support the video tag.
 </video>
 
