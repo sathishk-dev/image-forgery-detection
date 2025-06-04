@@ -72,6 +72,12 @@ http://127.0.0.1:5000/
 - Upload an image
 - View forged regions highlighted
 
+### 📽 Demo Video
+
+<video src="static/Live Demo.mp4" controls width="700">
+  Your browser does not support the video tag.
+</video>
+
 ### Our Team
 - Praveenkumar M
 - Sathish Kumar S
